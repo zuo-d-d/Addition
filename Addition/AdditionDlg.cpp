@@ -198,9 +198,9 @@ void CAdditionDlg::OnBnClickedInstructButton()
 	// TODO: 在此添加控件通知处理程序代码
 
 	//创建说明窗口
-	CAddsheet sheet(_T("使用说明"));
+	CAddsheet sheet(_T(""));
 	//设置为向导对话框
-	//sheet.SetWizardMode();
+	sheet.SetWizardMode();
 	//打开
 	sheet.DoModal();
 }
