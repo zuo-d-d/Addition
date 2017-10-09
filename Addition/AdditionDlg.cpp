@@ -174,19 +174,21 @@ void CAdditionDlg::OnBnClickedAddButton()
 {
 	// TODO: 在此添加控件通知处理程序代码
 
-	/*INT_PTR nRes;
+	INT_PTR nRes;
 
+
+	nRes = MessageBox( _T("确定计算吗？"), _T("加法计算器"), MB_OKCANCEL|MB_ICONQUESTION );
 	CTipDialog tipdialog;
 	nRes = tipdialog.DoModal();
 	if (nRes == IDCANCEL)
-		return;*/
+		return;
 
-	if (m_ptipdlg == NULL)
+	/*if (m_ptipdlg == NULL)
 	{
 		m_ptipdlg = new CTipDialog();
 		m_ptipdlg->Create(IDD_TIP_DIALOG);
 	}
-	m_ptipdlg->ShowWindow(SW_SHOW);
+	m_ptipdlg->ShowWindow(SW_SHOW);*/
 
 	UpdateData(TRUE);
 	m_editAddend = m_editSummand + m_editSum ;
