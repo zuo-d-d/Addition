@@ -178,8 +178,8 @@ void CAdditionDlg::OnBnClickedAddButton()
 
 
 	nRes = MessageBox( _T("确定计算吗？"), _T("加法计算器"), MB_OKCANCEL|MB_ICONQUESTION );
-	CTipDialog tipdialog;
-	nRes = tipdialog.DoModal();
+	//CTipDialog tipdialog;
+	//nRes = tipdialog.DoModal();
 	if (nRes == IDCANCEL)
 		return;
 
